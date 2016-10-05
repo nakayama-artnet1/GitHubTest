@@ -26,7 +26,7 @@ public class AsyncFileDownload extends AsyncTask<String, Void, Boolean>
     private final int TIMEOUT_READ = 5000;
     private final int TIMEOUT_CONNECT = 30000;
 
-    public Activity owner;
+    public Activity owner = null;
     private final int BUFFER_SIZE = 1024;
 
     private String urlString;
