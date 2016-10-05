@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ヘッダ表示 -->
+    <include layout="@layout/header"/>
+
+    <!-- 再生画面表示 -->
+    <include layout="@layout/videoview_common"
+        android:id="@+id/videoLayout"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_linear">
+
+        <!-- ボタン領域 -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="一覧へ戻る"
+            android:gravity="right|center"
+            android:background="@android:color/white"
+            android:id="@+id/end_button2" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="まとめてダウンロード　↓"
+            android:background="@drawable/border"
+            android:id="@+id/alldownload_button" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="まとめて削除　　　　　×"
+            android:background="@drawable/border"
+            android:id="@+id/alldel_button" />
+
+        <!-- リスト表示 -->
+        <ListView
+            android:id="@+id/listView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

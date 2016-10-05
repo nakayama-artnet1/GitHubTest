@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/videoLayout"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center">
+
+    <FrameLayout
+        android:id="@+id/FrameLayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <VideoView android:id="@+id/videoView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25sp"
+            android:background="#00000000"
+            android:id="@+id/status_txt"
+            android:layout_gravity="center"
+            android:textColor="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/controlLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;&lt;"
+                android:textSize="25sp"
+                android:background="#00000000"
+                android:id="@+id/prev_button"
+                android:layout_marginRight="0sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textSize="25sp"
+                android:background="#00000000"
+                android:id="@+id/m15_button"
+                android:layout_marginRight="0sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▶"
+                android:textSize="25sp"
+                android:background="#00000000"
+                android:id="@+id/play_button"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textSize="25sp"
+                android:background="#00000000"
+                android:id="@+id/p15_button"
+                android:layout_marginLeft="0sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&gt;&gt;"
+                android:textSize="25sp"
+                android:background="#00000000"
+                android:id="@+id/next_button"
+                android:layout_marginLeft="0sp"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ストリーミング再生"
+            android:textSize="15sp"
+            android:background="#00000000"
+            android:id="@+id/playType_txt"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="◇"
+            android:textSize="25sp"
+            android:background="#00000000"
+            android:id="@+id/screen_button"
+            android:layout_marginBottom="50sp"
+            android:layout_gravity="right|top"
+            android:textColor="@android:color/darker_gray" />
+
+        <SeekBar style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:id="@+id/playVer"
+            android:layout_gravity="bottom" />
+
+    </FrameLayout>
+
+</LinearLayout>

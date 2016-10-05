@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="タイトル"
+        android:textSize = "25sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"/>
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="URL"
+        android:textSize="25sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"/>
+
+    <EditText
+        android:id="@+id/editUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://www.ajisaba.net/motion/dnld.php?fpath=emu.mp4"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="　追加　"
+            android:id="@+id/add_button"
+
+            android:layout_marginTop="50sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="キャンセル"
+            android:id="@+id/cancel_button"
+            android:layout_marginTop="50sp"/>
+        </LinearLayout>
+</LinearLayout>
